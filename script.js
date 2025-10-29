@@ -37,7 +37,6 @@ const guestData =
 	'jcaste': 'Jose Castellanos',
 	'default': 'Estimado Invitado' // Clave por defecto si no se encuentra el nombre
 };
-console.log('amount of guest:', 7+14+6+4+11);
 
 const config =
 {
@@ -45,7 +44,7 @@ const config =
 	eventDate: 'Sábado, 6 de Diciembre de 2025',
 	eventLocation: 'Calle 3b #38-113, Puerto Colombia',
 	eventTime: '3:00 PM',
-	coupleImg: './IMG/JoLi.jpeg',
+	coupleImg: './JoLi.jpeg',
 	schedule:
 	[
 		{ time: '3:00 PM', activity: 'Recepción | Bienvenida' },
