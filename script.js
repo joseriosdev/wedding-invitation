@@ -2,37 +2,37 @@
 const guestData =
 {
 	//--Family Twist (7)
-	'mom': 'Fuerte y Dócil Mommilety',
+	'mom': 'Mommilety',
 	'juayel': 'Juanchito y Wendi',
-	'greenfit': 'Preciosa Anita Greenfit Chik',
-	'devis': 'Inteligente Devis',
-	'tunys': 'Bella Anitunyss',
-	'huellita': 'Hermosa Huellita',
+	'greenfit': 'Anita Greenfit Chik',
+	'devis': 'Devis',
+	'tunys': 'Anitunyss',
+	'huellita': 'Huellita',
 	
 	//--Family Martinez (14)
-	'benhur': 'Benhur Y Edith',
-	'liliam': 'Edgar y Liliam',
-	'gali': 'Gali y Adriana',
-	'jose': 'Jose y Naye',
-	'uber': 'Uber y Adelaida',
-	'shofi': 'Jorge y Viviana',
-	'jr': 'Benhur Jr. y Mayerly',
+	'benhur': 'Benhur & Edith',
+	'liliam': 'Edgar & Liliam',
+	'gali': 'Gali & Adriana',
+	'jose': 'Jose & Naye',
+	'uber': 'Uber & Adelaida',
+	'shofi': 'Jorge & Viviana',
+	'jr': 'Benhur Jr. & Mayerly',
 	
 	//--Our Friends (6)
 	'paula': 'Paula la Viajera',
-	'alba': 'Hermes y Alba',
-	'eli': 'Daniel y Eliana',
+	'alba': 'Hermes & Alba',
+	'eli': 'Daniel & Eliana',
 	'pastor': 'Pastor Ruben',
 	
 	//--Lilo's Friends (4)
-	'pelaas': 'Edixa y Era',
-	'gaby': 'Gabriela y Luis',
+	'pelaas': 'Edixa & Era',
+	'gaby': 'Gabriela & Luis',
 	
 	//--Jose's Friends (11)
-	'siervos': 'Siervos Stiven y Jenny',
-	'tapias': 'David y Akane',
-	'moi': 'Moises y Cata',
-	'mayonesas': 'Maio Sr. y Maio Jr.',
+	'siervos': 'Siervos Stiven & Jenny',
+	'tapias': 'David & Akane',
+	'moi': 'Moises & Cata',
+	'mayonesas': 'Maio Sr. & Maio Jr.',
 	'papuchis': 'Papu y Andrea',
 	'jcaste': 'Jose Castellanos',
 	'default': 'Estimado Invitado' // Clave por defecto si no se encuentra el nombre
@@ -40,7 +40,7 @@ const guestData =
 
 const config =
 {
-	coupleName: 'Jose & Liliana',
+	coupleName: 'Jose <span style="color:#a37145">&</span> Liliana',
 	eventDate: 'Sábado, 6 de Diciembre de 2025',
 	eventLocation: 'Calle 3b #38-113, Puerto Colombia',
 	eventTime: '3:00 PM',
@@ -60,15 +60,16 @@ const config =
 
 const confettiContainer = document.getElementById('confetti-container');
 // Colors for the confetti pieces
-const colors = ['#ff5722', '#ff9800', '#ffc107', '#4caf50', '#2196f3', '#9c27b0'];
+//const colors = ['#ff5722', '#ff9800', '#ffc107', '#4caf50', '#2196f3', '#9c27b0'];
+const colors = ['#e3d7bd', '#ebe6d9', '#f6f3e7', '#fff', '#f0e2ce', '#d3d0c9'];
 
 // --- Core Functions ---
 
 function getScheduleHTML(schedule)
 {
 	return schedule.map(item => `
-		<div class="flex justify-between items-center py-2 border-b border-rose-200/50">
-			<div class="playfair text-xl text-rose-800 font-bold">${item.time}</div>
+		<div class="flex justify-between items-center py-2 border-b border-200/50">
+			<div class="font-merienda text-xl text-800 font-bold text-rose-400">${item.time}</div>
 			<div class="text-gray-700">${item.activity}</div>
 		</div>
 	`).join('');
@@ -140,110 +141,125 @@ function getCounter()
 // Template function to generate the entire invitation HTML
 function generateInvitation(guestName, cfg)
 {
-	return `
-		<div class="rain-container"></div>
+	return `		
+		<div class="w-full max-w-4xl bg-white shadow-xl rounded-lg overflow-hidden main-section">
+			<div class="bg-img init-rose-img"></div>
+			<div class="bg-img stalk-img"></div>
+			<div class="bg-img white-rose-img"></div>
+			<div class="bg-img wy-rose-img"></div>
+			<div class="bg-img flowers-img"></div>
+			<div class="bg-img sprout-img"></div>
 
-		<div class="w-full max-w-4xl bg-white shadow-xl rounded-lg overflow-hidden md:p-10 p-6 border-t-8 "
-			style="border-color: firebrick">
+			<div class="rings-img"></div>
 			
-			<!-- 1. Greetings from the couple (with a picture) -->
-			<section class="text-center mb-10">
-				<h1 class="playfair text-5xl font-extrabold text-rose-900 mb-10">${cfg.coupleName}</h1>
-				<h3 class="playfair text-4xl font-bold text-rose-900 mb-10 border-b-2 border-rose-200 pb-2">🔔6 / 12 / 2025🔔</h3>
-				<img src="${cfg.coupleImg}"
-					alt="Jose y Lilo"
-					class="w-full md:w-4/4 max-w-xs mx-auto rounded-full shadow-lg mb-6 border-4 border-rose-300/50 object-cover aspect-[5/5]"
-					onerror="this.src='https://placehold.co/400x300/a35f5c/ffffff?text=A+%26+R'"
-				/>
+			<div class="w-full max-w-4xl bg-white shadow-xl rounded-lg overflow-hidden md:p-10 p-6">
+				<!-- 1. Greetings from the couple (with a picture) -->
+				<section class="text-center mb-10">
+					<h1 class="text-5xl mb-10" style="font-family: 'WindSong', cursive;">${cfg.coupleName}</h1>
+					<h3 class="text-2xl "></h3> <!--🤍--><hr style="width:30%; margin: 2rem auto"/>
+					<h3 class="font-merienda text-3xl text-900">6 - Diciembre - 2025</h3>
+					<h3 class="text-2xl "></h3> <!--💮--><hr style="width:15%; margin: 1rem auto"/>
+					<h3 class="font-merienda text-4xl font-bold text-900 mb-10 border-b-2 border-200 pb-2" style="color:#9b713a">3:00 PM</h3>
+					<img src="${cfg.coupleImg}"
+						alt="Jose y Lilo"
+						style="filter: grayscale(25%); -webkit-filter: grayscale(25%);"
+						class="w-full md:w-4/4 max-w-xs mx-auto rounded-full shadow-lg mb-6 border-4 border-300/50 object-cover aspect-[5/5]"
+						onerror="this.src='https://placehold.co/400x300/a35f5c/ffffff?text=A+%26+R'"
+					/>
+					
+					
+					<h2 class="text-4xl mt-2" style="font-family: 'WindSong', cursive;">${guestName}</h2>
+					<p class="text-xl text-gray-700 mt-4">Estamos felices de invitarte a nuestra boda</p>
+					<p class="text-lg text-gray-400 font-semibold mt-4">Con el corazón lleno de alegría, te invitamos a compartir nuestro día</p>
+				</section>
+
+				<!-- 2. Short kind words -->
+				<section class="mb-10 text-center bg-50 p-6 rounded-xl">
+					<p class="text-lg text-gray-500 leading-relaxed">
+						<b>"Pero sobre todas estas cosas, vístanse de amor, que es el vínculo perfecto. Y la paz de Cristo gobierne en su corazón, pues a ella fueron llamados en un solo cuerpo, y sean agradecidos."</b>
+						<br/><i>Colosenses 3:14-15</i>
+					</p>
+				</section>
 				
+				<!-- 3. Location and Date -->
+				<section class="mb-10 text-center">
+					<h3 class="font-merienda text-4xl font-bold text-900 mb-4 border-b-2 border-200 pb-2">¡Agéndate!</h3>
+					<div class="space-y-4">
+						<p class="text-xl text-gray-800">
+							<span class="block font-bold">Fecha:</span>
+							<span class="text-2xl text-700 font-semibold">${cfg.eventDate}</span>
+						</p>
+						<p class="text-xl text-gray-800">
+							<span class="block font-bold">Lugar:</span>
+							<span class="text-2xl text-700 font-semibold">${cfg.eventLocation}</span>
+						</p>
+						<p class="text-xl text-gray-800">
+							<span class="block font-bold">Hora de Inicio:</span>
+							<span class="text-2xl text-700 font-semibold">${cfg.eventTime}</span>
+						</p>
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1958.1403102673114!2d-74.94077520780912!3d11.01755960838429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42a5cbbaef175%3A0x3f2cdd740f3d1a35!2sCl.%203%20B%20%23%2038-113%2C%20Puerto%20Colombia%2C%20Atl%C3%A1ntico!5e0!3m2!1sen!2sco!4v1761683186632!5m2!1sen!2sco"
+							style="border-radius:20px;width:100%;height:450px;"
+							allowfullscreen=""
+							loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade">
+						</iframe>
+					</div>
+				</section>
+
+				<!-- 4. Schedule of the event -->
+				<section class="mb-10 p-6 rounded-xl bg-white shadow-inner">
+					<h3 class="font-merienda text-3xl font-bold mb-6 text-center">Programa del Día</h3>
+					<div class="divide-y divide-rose-100">
+						${getScheduleHTML(cfg.schedule)}
+					</div>
+				</section>
 				
-				<h2 class="text-3xl font-bold text-rose-600 mt-2">${guestName}</h2>
-				<p class="text-xl text-gray-700 font-semibold mt-4">Estamos felices de invitarte a nuestra boda</p>
-				<p class="text-lg text-gray-400 font-semibold mt-4">Con el corazón lleno de alegría, te invitamos a compartir nuestro día</p>
-			</section>
-
-			<!-- 2. Short kind words -->
-			<section class="mb-10 text-center bg-rose-50 p-6 rounded-xl">
-				<p class="text-lg text-gray-500 leading-relaxed">
-					<b>"Pero sobre todas estas cosas, vístanse de amor, que es el vínculo perfecto. Y la paz de Cristo gobierne en su corazón, pues a ella fueron llamados en un solo cuerpo, y sean agradecidos."</b>
-					<br/><i>Colosenses 3:14-15</i>
-				</p>
-			</section>
-			
-			<!-- 3. Location and Date -->
-			<section class="mb-10 text-center">
-				<h3 class="playfair text-4xl font-bold text-rose-900 mb-4 border-b-2 border-rose-200 pb-2">¡Nos Casamos!</h3>
-				<div class="space-y-4">
-					<p class="text-xl text-gray-800">
-						<span class="block font-bold">Fecha:</span>
-						<span class="text-2xl text-rose-700 font-semibold">${cfg.eventDate}</span>
-					</p>
-					<p class="text-xl text-gray-800">
-						<span class="block font-bold">Lugar:</span>
-						<span class="text-2xl text-rose-700 font-semibold">${cfg.eventLocation}</span>
-					</p>
-					<p class="text-xl text-gray-800">
-						<span class="block font-bold">Hora de Inicio:</span>
-						<span class="text-2xl text-rose-700 font-semibold">${cfg.eventTime}</span>
-					</p>
-					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1958.1403102673114!2d-74.94077520780912!3d11.01755960838429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42a5cbbaef175%3A0x3f2cdd740f3d1a35!2sCl.%203%20B%20%23%2038-113%2C%20Puerto%20Colombia%2C%20Atl%C3%A1ntico!5e0!3m2!1sen!2sco!4v1761683186632!5m2!1sen!2sco"
-						style="border-radius:20px;width:100%;height:450px;"
-						allowfullscreen=""
-						loading="lazy"
-						referrerpolicy="no-referrer-when-downgrade">
-					</iframe>
-				</div>
-			</section>
-
-			<!-- 4. Schedule of the event -->
-			<section class="mb-10 p-6 rounded-xl bg-white shadow-inner">
-				<h3 class="playfair text-3xl font-bold text-rose-900 mb-6 text-center">Programa del Día</h3>
-				<div class="divide-y divide-rose-100">
-					${getScheduleHTML(cfg.schedule)}
-				</div>
-			</section>
-			
-			<!-- 5. Counter -->
-			<section class="text-center pt-4">
-				<h3>Tan solo falta 💍</h3>
-				<div class="countdown">
-					<div class="time-box">
-						<span id="days">00</span>
-						<div class="label">Días</div>
+				<!-- 5. Counter -->
+				<section class="text-center pt-4">
+					<h3>️❤️ Tan solo falta 💍</h3>
+					<div class="countdown">
+						<div class="time-box">
+							<span id="days">00</span>
+							<div class="label">Días</div>
+						</div>
+						<div class="time-box">
+							<span id="hours">00</span>
+							<div class="label">Horas</div>
+						</div>
+						<div class="time-box">
+							<span id="minutes">00</span>
+							<div class="label">Min.</div>
+						</div>
+						<div class="time-box">
+							<span id="seconds">00</span>
+							<div class="label">Seg.</div>
+						</div>
 					</div>
-					<div class="time-box">
-						<span id="hours">00</span>
-						<div class="label">Horas</div>
-					</div>
-					<div class="time-box">
-						<span id="minutes">00</span>
-						<div class="label">Min.</div>
-					</div>
-					<div class="time-box">
-						<span id="seconds">00</span>
-						<div class="label">Seg.</div>
-					</div>
-				</div>
-			</section>
+				</section>
 
 
 
-			<!-- 5. Some additional comments -->
-			<section class="text-center pt-4 mb-10">
-				<h3 class="playfair text-3xl font-bold text-rose-900 mb-4">Recomendaciones</h3>
-				<ul class="list-disc list-inside text-2xl text-left mx-auto max-w-md space-y-2 text-gray-700">
-					<li>El código de vestimenta es **Casual**.</li>
-					<li>Agradeceremos confirmar tu asistencia antes del 15 de Noviembre.</li>
-					<li>¡La celebración está pensada para adultos, agradecemos tu comprensión!</li>
-					<li>La boda es un evento privado, así que solo podrán asistir quienes estén en la lista y no se contemplan invitados adicionales.</li>
-					<li>El color blanco está reservado exclusivamente para la novia. Por favor, elige otro color para tu atuendo.</li>
-					<li>De no poder asistir, aún puedes acompañarnos por Instragram siguiendo a <b>@jesus.rios</b>.</li>
-				</ul>
-				<p class="mt-8 text-2xl playfair text-rose-900 font-semibold">¡Esperamos verte allí!</p>
-			</section>
-			
-			<footer class="text-center pt-4">— Jose ❤️ Cristo ❤️ Liliana —</footer>
+				<!-- 5. Some additional comments -->
+				<section class="text-center pt-4 mb-10">
+					<h3 class="text-2xl mb-6">
+						<b style="color:#9b713a">QUEREMOS HACER UNA EXPERIENCIA HERMOSA E INOLVIDABLE PARA TODOS</b>
+						<br>
+						<i>Por eso, tenemos algunas reglas y recomendaciones para disfrutar juntos este día tan especial:</i>
+					</h3>
+					<ul class="list-disc list-inside text-2xl text-left mx-auto max-w-2xl space-y-2 text-gray-700">
+						<li>El código de vestimenta es **Casual**.</li>
+						<li>Agradeceremos confirmar tu asistencia antes del 15 de Noviembre.</li>
+						<li>¡La celebración está pensada para adultos, agradecemos tu comprensión!</li>
+						<li>La boda es un evento privado, así que solo podrán asistir quienes estén en la lista y no se contemplan invitados adicionales.</li>
+						<li>El color blanco está reservado exclusivamente para la novia. Por favor, elige otro color para tu atuendo.</li>
+						<li>De no poder asistir, aún puedes acompañarnos por Instragram siguiendo a <b>@jesus.rios</b>.</li>
+					</ul>
+					<p class="mt-8 text-2xl text-900 font-semibold">¡Esperamos verte allí!</p>
+				</section>
+				
+				<footer class="text-center pt-4">— Jose ❤️ Cristo ❤️ Liliana —</footer>
+			</div>
 		</div>
 	`;
 }
