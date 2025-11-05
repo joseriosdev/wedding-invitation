@@ -2,38 +2,40 @@
 const guestData =
 {
 	//--Family Twist (7)
+	'twist': 'Family Twist',
 	'mom': 'Mommilety',
-	'juayel': 'Juanchito y Wendi',
+	'juayel': 'Juanchito <span style="color:#a37145">&</span> Wendi',
 	'greenfit': 'Anita Greenfit Chik',
 	'devis': 'Devis',
 	'tunys': 'Anitunyss',
 	'huellita': 'Huellita',
 	
 	//--Family Martinez (14)
-	'benhur': 'Benhur & Edith',
-	'liliam': 'Edgar & Liliam',
-	'gali': 'Gali & Adriana',
-	'jose': 'Jose & Naye',
-	'uber': 'Uber & Adelaida',
-	'shofi': 'Jorge & Viviana',
-	'jr': 'Benhur Jr. & Mayerly',
+	'martinez': 'Familia Martinez',
+	'benhur': 'Benhur <span style="color:#a37145">&</span> Edith',
+	'liliam': 'Edgar <span style="color:#a37145">&</span> Liliam',
+	'gali': 'Gali <span style="color:#a37145">&</span> Adriana',
+	'jose': 'Jose <span style="color:#a37145">&</span> Naye',
+	'uber': 'Uber <span style="color:#a37145">&</span> Adelaida',
+	'shofi': 'Jorge <span style="color:#a37145">&</span> Viviana',
+	'jr': 'Benhur Jr. <span style="color:#a37145">&</span> Mayerly',
 	
 	//--Our Friends (6)
 	'paula': 'Paula la Viajera',
-	'alba': 'Hermes & Alba',
-	'eli': 'Daniel & Eliana',
+	'alba': 'Hermes <span style="color:#a37145">&</span> Alba',
+	'eli': 'Daniel <span style="color:#a37145">&</span> Eliana',
 	'pastor': 'Pastor Ruben',
 	
 	//--Lilo's Friends (4)
-	'pelaas': 'Edixa & Era',
-	'gaby': 'Gabriela & Luis',
+	'pelaas': 'Edixa <span style="color:#a37145">&</span> Era',
+	'gaby': 'Gabriela <span style="color:#a37145">&</span> Luis',
 	
 	//--Jose's Friends (11)
-	'siervos': 'Siervos Stiven & Jenny',
-	'tapias': 'David & Akane',
-	'moi': 'Moises & Cata',
-	'mayonesas': 'Maio Sr. & Maio Jr.',
-	'papuchis': 'Papu y Andrea',
+	'siervos': 'Siervos Stiven <span style="color:#a37145">&</span> Jenny',
+	'tapias': 'David <span style="color:#a37145">&</span> Akane',
+	'moi': 'Moises <span style="color:#a37145">&</span> Cata',
+	'mayonesas': 'Maio Sr. <span style="color:#a37145">&</span> Maio Jr.',
+	'papuchis': 'Papu <span style="color:#a37145">&</span> Andrea',
 	'jcaste': 'Jose Castellanos',
 	'default': 'Estimado Invitado' // Clave por defecto si no se encuentra el nombre
 };
@@ -60,8 +62,7 @@ const config =
 
 const confettiContainer = document.getElementById('confetti-container');
 // Colors for the confetti pieces
-//const colors = ['#ff5722', '#ff9800', '#ffc107', '#4caf50', '#2196f3', '#9c27b0'];
-const colors = ['#e3d7bd', '#ebe6d9', '#f6f3e7', '#fff', '#f0e2ce', '#d3d0c9'];
+const colors = ['#e3d7bd', '#ebe6d9', '#f6f3e7', '#fff', '#f0e2ce', '#d3d0c9', '#f3d0f9'];
 
 // --- Core Functions ---
 
@@ -155,7 +156,7 @@ function generateInvitation(guestName, cfg)
 			<div class="w-full max-w-4xl bg-white shadow-xl rounded-lg overflow-hidden md:p-10 p-6">
 				<!-- 1. Greetings from the couple (with a picture) -->
 				<section class="text-center mb-10">
-					<h1 class="text-5xl mb-10" style="font-family: 'WindSong', cursive;">${cfg.coupleName}</h1>
+					<h1 class="text-6xl mb-10" style="font-family: 'WindSong', cursive;">${cfg.coupleName}</h1>
 					<h3 class="text-2xl "></h3> <!--🤍--><hr style="width:30%; margin: 2rem auto"/>
 					<h3 class="font-merienda text-3xl text-900">6 - Diciembre - 2025</h3>
 					<h3 class="text-2xl "></h3> <!--💮--><hr style="width:15%; margin: 1rem auto"/>
@@ -239,7 +240,6 @@ function generateInvitation(guestName, cfg)
 				</section>
 
 
-
 				<!-- 5. Some additional comments -->
 				<section class="text-center pt-4 mb-10">
 					<h3 class="text-2xl mb-6">
@@ -248,17 +248,16 @@ function generateInvitation(guestName, cfg)
 						<i>Por eso, tenemos algunas reglas y recomendaciones para disfrutar juntos este día tan especial:</i>
 					</h3>
 					<ul class="list-disc list-inside text-2xl text-left mx-auto max-w-2xl space-y-2 text-gray-700">
-						<li>El código de vestimenta es **Casual**.</li>
-						<li>Agradeceremos confirmar tu asistencia antes del 15 de Noviembre.</li>
-						<li>¡La celebración está pensada para adultos, agradecemos tu comprensión!</li>
-						<li>La boda es un evento privado, así que solo podrán asistir quienes estén en la lista y no se contemplan invitados adicionales.</li>
+						<li>El código de vestimenta es Casual.</li>
 						<li>El color blanco está reservado exclusivamente para la novia. Por favor, elige otro color para tu atuendo.</li>
-						<li>De no poder asistir, aún puedes acompañarnos por Instragram siguiendo a <b>@jesus.rios</b>.</li>
+						<li>Agradeceremos confirmar tu asistencia antes del 15 de Noviembre.</li>
+						<li>La boda es un evento privado, así que solo podrán asistir quienes estén en la lista y no se contemplan invitados adicionales.</li>
+						<li>De no poder asistir, aún puedes acompañarnos por Instragram siguiendo a <a href="https://www.instagram.com/yisus.freak/"><b>@yisus.freak</b></a>.</li>
 					</ul>
 					<p class="mt-8 text-2xl text-900 font-semibold">¡Esperamos verte allí!</p>
 				</section>
 				
-				<footer class="text-center pt-4">— Jose ❤️ Cristo ❤️ Liliana —</footer>
+				<footer class="text-center pt-4">— Jose ❤️ Jesucristo ❤️ Liliana —</footer>
 			</div>
 		</div>
 	`;
