@@ -21,13 +21,14 @@ const guestData =
 	'jr': 'Benhur Jr. <span style="color:#a37145">&</span> Mayerly',
 	
 	//--Our Friends (6)
-	'paula': 'Paula la Viajera',
+	'paula': 'Paula',
 	'alba': 'Hermes <span style="color:#a37145">&</span> Alba',
 	'eli': 'Daniel <span style="color:#a37145">&</span> Eliana',
-	'pastor': 'Pastor Ruben',
+	'pana': 'Pastor Ruben Pana',
+	'mario': 'Pastor Mario Granados',
 	
 	//--Lilo's Friends (4)
-	'pelaas': 'Edixa <span style="color:#a37145">&</span> Era',
+	'pelaas': 'Edixa, Jessi <span style="color:#a37145">&</span> Era',
 	'gaby': 'Gabriela <span style="color:#a37145">&</span> Luis',
 	
 	//--Jose's Friends (11)
@@ -37,6 +38,10 @@ const guestData =
 	'mayonesas': 'Maio Sr. <span style="color:#a37145">&</span> Maio Jr.',
 	'papuchis': 'Papu <span style="color:#a37145">&</span> Andrea',
 	'jcaste': 'Jose Castellanos',
+	'vriv': 'Señoritas Vergara',
+	'jeff': 'Jeffer',
+	'malagon': 'Natalia Malagon',
+	'nope': 'Familia Nope',
 	'default': 'Estimado Invitado' // Clave por defecto si no se encuentra el nombre
 };
 
