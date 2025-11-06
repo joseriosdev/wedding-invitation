@@ -33,7 +33,7 @@ const guestData =
 	
 	//--Jose's Friends (11)
 	'siervos': 'Siervos Stiven <span style="color:#a37145">&</span> Jenny',
-	'tapias': 'David <span style="color:#a37145">&</span> Akane',
+	'tapias': 'Familia Tapias Morillo',
 	'moi': 'Moises <span style="color:#a37145">&</span> Cata',
 	'mayonesas': 'Maio Sr. <span style="color:#a37145">&</span> Maio Jr.',
 	'papuchis': 'Papu <span style="color:#a37145">&</span> Andrea',
