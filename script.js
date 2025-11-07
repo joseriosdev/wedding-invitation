@@ -1,7 +1,7 @@
 // --- Configuration Data ---
 const guestData =
 {
-	//--Family Twist (7)
+	//--Family Twist
 	'twist': 'Family Twist',
 	'mom': 'Mommilety',
 	'juayel': 'Juanchito <span style="color:#a37145">&</span> Wendi',
@@ -10,7 +10,7 @@ const guestData =
 	'tunys': 'Anitunyss',
 	'huellita': 'Huellita',
 	
-	//--Family Martinez (14)
+	//--Family Martinez
 	'martinez': 'Familia Martinez',
 	'benhur': 'Benhur <span style="color:#a37145">&</span> Edith',
 	'liliam': 'Edgar <span style="color:#a37145">&</span> Liliam',
@@ -20,18 +20,18 @@ const guestData =
 	'shofi': 'Jorge <span style="color:#a37145">&</span> Viviana',
 	'jr': 'Benhur Jr. <span style="color:#a37145">&</span> Mayerly',
 	
-	//--Our Friends (6)
+	//--Our Friends
 	'paula': 'Paula',
 	'alba': 'Hermes <span style="color:#a37145">&</span> Alba',
 	'eli': 'Daniel <span style="color:#a37145">&</span> Eliana',
 	'pana': 'Pastor Ruben Pana',
 	'mario': 'Pastor Mario Granados',
 	
-	//--Lilo's Friends (4)
+	//--Lilo's Friends
 	'pelaas': 'Edixa, Jessi <span style="color:#a37145">&</span> Era',
 	'gaby': 'Gabriela <span style="color:#a37145">&</span> Luis',
 	
-	//--Jose's Friends (11)
+	//--Jose's Friends
 	'siervos': 'Siervos Stiven <span style="color:#a37145">&</span> Jenny',
 	'tapias': 'Familia Tapias Morillo',
 	'moi': 'Moises <span style="color:#a37145">&</span> Cata',
@@ -41,6 +41,9 @@ const guestData =
 	'vriv': 'Señoritas Vergara',
 	'jeff': 'Jeffer',
 	'malagon': 'Natalia Malagon',
+	'ruano': 'Joha Ruano',
+	'roseros': 'Familia Rosero',
+	'medina': 'Familia Medina',
 	'nope': 'Familia Nope',
 	'default': 'Estimado Invitado' // Clave por defecto si no se encuentra el nombre
 };
@@ -59,7 +62,7 @@ const config =
 		{ time: '5:15 PM', activity: 'Sesión de Fotos | Aperitivos' },
 		{ time: '6:30 PM', activity: 'Cena & Brindis' },
 		{ time: '8:30 PM', activity: 'Baile de Apertura' },
-		{ time: '8:50 PM', activity: '¡A Bailar!' },
+		{ time: '8:50 PM', activity: '¡Fiesta!' },
 		{ time: '9:30 PM', activity: 'Lanzamiento del Ramo' },
 		{ time: '10:00 PM', activity: 'Fin del Evento' }
 	]
@@ -254,7 +257,7 @@ function generateInvitation(guestName, cfg)
 					</h3>
 					<ul class="list-disc list-inside text-2xl text-left mx-auto max-w-2xl space-y-2 text-gray-700">
 						<li>El código de vestimenta es Casual.</li>
-						<li>El color blanco está reservado exclusivamente para la novia. Por favor, elige otro color para tu atuendo.</li>
+						<li>El color blanco está reservado exclusivamente para los novios. Por favor, elige otro color para tu atuendo.</li>
 						<li>Agradeceremos confirmar tu asistencia antes del 15 de Noviembre.</li>
 						<li>La boda es un evento privado, así que solo podrán asistir quienes estén en la lista y no se contemplan invitados adicionales.</li>
 						<li>De no poder asistir, aún puedes acompañarnos por Instragram siguiendo a <a href="https://www.instagram.com/yisus.freak/"><b>@yisus.freak</b></a>.</li>
