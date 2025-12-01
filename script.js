@@ -25,7 +25,7 @@ const guestData =
 	'alba': 'Hermes <span style="color:#a37145">&</span> Alba',
 	'eli': 'Daniel <span style="color:#a37145">&</span> Eliana',
 	'pana': 'Pastor Ruben Pana',
-	'mario': 'Pastor Mario Granados',
+	'mario': 'Mario <span style="color:#a37145">&</span> Arelis',
 	
 	//--Lilo's Friends
 	'pelaas': 'Edixa, Jessi <span style="color:#a37145">&</span> Era',
@@ -34,6 +34,8 @@ const guestData =
 	//--Jose's Friends
 	'siervos': 'Siervos Stiven <span style="color:#a37145">&</span> Jenny',
 	'tapias': 'Familia Tapias Morillo',
+	'silvia': 'Silvia <span style="color:#a37145">&</span> Akane',
+	'tere': 'Orlando <span style="color:#a37145">&</span> Teresa',
 	'moi': 'Moises <span style="color:#a37145">&</span> Cata',
 	'mayonesas': 'Maio Sr. <span style="color:#a37145">&</span> Maio Jr.',
 	'papuchis': 'Papu <span style="color:#a37145">&</span> Andrea',
@@ -58,12 +60,12 @@ const config =
 	schedule:
 	[
 		{ time: '3:00 PM', activity: 'Recepción | Bienvenida' },
-		{ time: '4:00 PM', activity: 'Ceremonia Nupcial' },
-		{ time: '5:15 PM', activity: 'Sesión de Fotos | Aperitivos' },
-		{ time: '6:30 PM', activity: 'Cena & Brindis' },
-		{ time: '8:30 PM', activity: 'Baile de Apertura' },
+		{ time: '4:30 PM', activity: 'Ceremonia Nupcial' },
+		{ time: '5:30 PM', activity: 'Sesión de Fotos | Aperitivos' },
+		{ time: '6:30 PM', activity: 'Baile de Apertura' },
+		{ time: '6:50 PM', activity: 'Brindis & Cena' },
+		{ time: '8:30 PM', activity: 'Lanzamiento del Ramo' },
 		{ time: '8:50 PM', activity: '¡Fiesta!' },
-		{ time: '9:30 PM', activity: 'Lanzamiento del Ramo' },
 		{ time: '10:00 PM', activity: 'Fin del Evento' }
 	]
 };
