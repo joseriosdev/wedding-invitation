@@ -259,8 +259,9 @@ function generateInvitation(guestName, cfg)
 					</h3>
 					<ul class="list-disc list-inside text-2xl text-left mx-auto max-w-2xl space-y-2 text-gray-700">
 						<li>El código de vestimenta es Casual.</li>
+						<li>Hay lluvia de sobres.</li>
 						<li>El color blanco está reservado exclusivamente para los novios. Por favor, elige otro color para tu atuendo.</li>
-						<li>Agradeceremos confirmar tu asistencia antes del 15 de Noviembre.</li>
+						<li>Agradeceremos confirmar tu asistencia con aterioridad.</li>
 						<li>La boda es un evento privado, así que solo podrán asistir quienes estén en la lista y no se contemplan invitados adicionales.</li>
 						<li>De no poder asistir, aún puedes acompañarnos por Instragram siguiendo a <a href="https://www.instagram.com/yisus.freak/"><b>@yisus.freak</b></a>.</li>
 					</ul>
