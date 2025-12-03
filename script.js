@@ -259,7 +259,7 @@ function generateInvitation(guestName, cfg)
 					</h3>
 					<ul class="list-disc list-inside text-2xl text-left mx-auto max-w-2xl space-y-2 text-gray-700">
 						<li>El código de vestimenta es Casual.</li>
-						<li>Hay lluvia de sobres.</li>
+						<li>Lluvia de Sobres. 💌</li>
 						<li>El color blanco está reservado exclusivamente para los novios. Por favor, elige otro color para tu atuendo.</li>
 						<li>Agradeceremos confirmar tu asistencia con aterioridad.</li>
 						<li>La boda es un evento privado, así que solo podrán asistir quienes estén en la lista y no se contemplan invitados adicionales.</li>
